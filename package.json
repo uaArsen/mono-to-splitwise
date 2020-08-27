@@ -1,0 +1,21 @@
+{
+  "name": "mono-to-splitwise",
+  "version": "1.0.0",
+  "description": "Integration between Mono Bank and SplitWise",
+  "main": "index.js",
+  "engines": {
+    "node" : "12.16.2"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "monobank",
+    "splitwise"
+  ],
+  "author": "Arsenii Zhdanov",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "0.20.0"
+  }
+}
