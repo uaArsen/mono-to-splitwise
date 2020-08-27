@@ -21,6 +21,9 @@ class TransactionConverter {
   }
 
   calculateSplit(amount, allowedTransaction) {
+    if (allowedTransaction.split.splitEqually) {
+      return allowedTransaction.split;
+    }
     const n = allowedTransaction.split.users.length + 1;
     const owed = this.splitMoney(amount, n);
     let i = 0;
