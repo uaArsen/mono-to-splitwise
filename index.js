@@ -12,8 +12,8 @@ exports.handler = async function (event) {
     const config = getConfig();
     const mono = new Mono(config);
     const splitwise = new Splitwise(config);
-    const converter = new TransactionConverter(config, event.body);
-    const transactions = await mono.getTransactions(event.body);
+    const converter = new TransactionConverter(config, event);
+    const transactions = await mono.getTransactions(event);
     logIfDebugEnabled('Monobank transactions: %j', transactions);
     const payments = converter.convert(transactions);
     logIfDebugEnabled('Converted transactions: %j', payments);

@@ -1,3 +1,4 @@
+[![uaArsen](https://circleci.com/gh/uaArsen/mono-to-splitwise.svg?style=svg&circle-token=0df656dd7502f546c7c4f11ce07491d4b0bf3752)](https://github.com/uaArsen/mono-to-splitwise)
 # AWS Lambda: Monobank to SplitWise transfer
 
 ## Usage

@@ -7,11 +7,9 @@ describe('Index spec', () => {
   it('Transfer configured transactions', async () => {
     const transaction = process.env.TEST_TRANSACTION;
     const event = {
-      body: {
         allowedTransactions: {}
-      }
     };
-    event.body.allowedTransactions[transaction] = {
+    event.allowedTransactions[transaction] = {
       split: {
         splitEqually: false,
         users:
